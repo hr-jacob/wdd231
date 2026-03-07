@@ -1,13 +1,54 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
-.navigation{
-display:flex;
-flex-direction:row;
-gap:20px;
+/* ---------- HEADER ---------- */
+
+#menu {
+display: none;
 }
 
-#courses{
-grid-template-columns:repeat(3,1fr);
+.navigation {
+display: flex;
+position: static;
+flex-direction: row;
+background: none;
+width: auto;
+}
+
+.navigation li {
+border: none;
+}
+
+.navigation a {
+padding: 0.5rem 1rem;
+}
+
+/* ---------- MAIN LAYOUT ---------- */
+
+main {
+max-width: 1000px;
+margin: auto;
+}
+
+/* ---------- SECTIONS GRID ---------- */
+
+main {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+main h1 {
+grid-column: span 2;
+}
+
+section:nth-of-type(3) {
+grid-column: span 2;
+}
+
+/* ---------- COURSES GRID ---------- */
+
+#courses {
+grid-template-columns: repeat(3, 1fr);
 }
 
 }

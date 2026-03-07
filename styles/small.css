@@ -1,31 +1,158 @@
-body{
+/* ---------- GENERAL ---------- */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
 font-family: 'Roboto', sans-serif;
-margin:0;
+background-color: #f4f4f4;
+line-height: 1.6;
 }
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:1rem;
+main {
+padding: 1rem;
 }
 
-.navigation{
-display:none;
-flex-direction:column;
+/* ---------- HEADER ---------- */
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: #1f2937;
+color: white;
+padding: 1rem;
 }
 
-.navigation.open{
-display:flex;
+header img {
+width: 40px;
 }
 
-#courses{
-display:grid;
-gap:10px;
+header span {
+font-size: 1.3rem;
+font-weight: bold;
 }
 
-.completed{
-background:#4CAF50;
-color:white;
-padding:10px;
+/* ---------- NAVIGATION ---------- */
+
+#menu {
+font-size: 1.8rem;
+background: none;
+border: none;
+color: white;
+cursor: pointer;
+}
+
+.navigation {
+list-style: none;
+display: none;
+flex-direction: column;
+background: #1f2937;
+position: absolute;
+top: 70px;
+right: 0;
+width: 200px;
+}
+
+.navigation.open {
+display: flex;
+}
+
+.navigation li {
+border-top: 1px solid #444;
+}
+
+.navigation a {
+display: block;
+padding: 1rem;
+color: white;
+text-decoration: none;
+}
+
+.navigation a:hover {
+background: #374151;
+}
+
+/* ---------- SECTIONS ---------- */
+
+section {
+background: white;
+margin: 1rem 0;
+padding: 1rem;
+border-radius: 6px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+margin-bottom: 1rem;
+}
+
+h2 {
+margin-bottom: 0.5rem;
+}
+
+/* ---------- COURSE BUTTONS ---------- */
+
+.buttons {
+margin-bottom: 1rem;
+}
+
+.buttons button {
+padding: 6px 12px;
+margin: 3px;
+border: none;
+background: #374151;
+color: white;
+cursor: pointer;
+border-radius: 4px;
+}
+
+.buttons button:hover {
+background: #111827;
+}
+
+/* ---------- COURSES GRID ---------- */
+
+#courses {
+display: grid;
+grid-template-columns: 1fr;
+gap: 10px;
+}
+
+#courses div {
+padding: 10px;
+border-radius: 4px;
+background: #e5e7eb;
+text-align: center;
+font-weight: bold;
+}
+
+/* completed course */
+
+.completed {
+background: #22c55e;
+color: white;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+text-align: center;
+background: #1f2937;
+color: white;
+padding: 1rem;
+margin-top: 2rem;
+}
+
+footer a {
+color: #60a5fa;
+text-decoration: none;
+margin: 0 5px;
+}
+
+footer a:hover {
+text-decoration: underline;
 }
