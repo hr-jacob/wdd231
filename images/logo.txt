@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="logo">
+  <circle cx="250" cy="250" r="230" stroke="white" stroke-width="20" fill="none"/>
+  
+  <text x="250" y="230"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="90"
+        fill="white">
+        &lt;/&gt;
+  </text>
+
+  <text x="250" y="320"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="60"
+        fill="white"
+        font-weight="bold">
+        jhr code
+  </text>
+</svg>
