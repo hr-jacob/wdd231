@@ -2,6 +2,10 @@
 
 /* ---------- HEADER ---------- */
 
+.logo{
+width:120px;
+}
+
 #menu {
 display: none;
 }
