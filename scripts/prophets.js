@@ -9,6 +9,7 @@ async function getProphetData() {
     // Convert response to JSON
     const data = await response.json();
 
-    // Display data in console as a table
-    console.table(data.prophets);
+  displayProphets(data.prophets);
+
+  getProphetData();
 }
