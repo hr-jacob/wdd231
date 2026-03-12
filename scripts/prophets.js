@@ -11,5 +11,12 @@ async function getProphetData() {
 
   displayProphets(data.prophets);
 
-  getProphetData();
+    const displayProphets = (prophets) => {
+    prophets.forEach((prophet) => {
+        // card build code goes here
+    });
+    }
+ 
 }
+
+ getProphetData();
