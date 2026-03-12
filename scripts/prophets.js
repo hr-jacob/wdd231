@@ -14,15 +14,20 @@ async function getProphetData() {
 const displayProphets = (prophets) => {
   prophets.forEach((prophet) => {
 
-    // Create elements
     let card = document.createElement('section');
     let fullName = document.createElement('h2');
+    let birthDate = document.createElement('p');
+    let birthPlace = document.createElement('p');
     let portrait = document.createElement('img');
 
-    // Prophet name
+    // Name
     fullName.textContent = `${prophet.name} ${prophet.lastname}`;
 
-    // Image attributes
+    // Other information
+    birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
+    birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
+
+    // Image
     portrait.setAttribute('src', prophet.imageurl);
     portrait.setAttribute(
       'alt',
@@ -32,10 +37,13 @@ const displayProphets = (prophets) => {
     portrait.setAttribute('width', '340');
     portrait.setAttribute('height', '440');
 
-    // Append elements
+    // Add everything to the card
     card.appendChild(fullName);
+    card.appendChild(birthDate);
+    card.appendChild(birthPlace);
     card.appendChild(portrait);
 
+    // Add card to page
     cards.appendChild(card);
   });
 };
