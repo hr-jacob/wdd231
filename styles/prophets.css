@@ -109,21 +109,6 @@ li > img {
 	height: 30px;
 }
 
-/* ===== Caption ===== */
-
-.caption {
-	position: absolute;
-	top: 1.5rem;
-	right: 2rem;
-	border: 1px solid #cfe3f3;
-	background-color: #f0f7ff;
-	padding: 0.25rem;
-	display: grid;
-	align-items: center;
-	grid-template-columns: 1rem 1fr;
-	border-radius: 5px;
-}
-
 /* ===== Lists ===== */
 
 .un {
