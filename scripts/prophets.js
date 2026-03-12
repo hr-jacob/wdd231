@@ -4,18 +4,29 @@ const cards = document.querySelector('#cards');
 
 async function getProphetData() {
     // Fetch the data
-    const response = await fetch(url);
+const displayProphets = (prophets) => {
+  prophets.forEach((prophet) => {
+    // Create elements to add to the div.cards element
+    let card = document.createElement('section');
+    let fullName = document.createElement('__'); // fill in the blank
+    let portrait = document.createElement('img');
 
-    // Convert response to JSON
-    const data = await response.json();
+    // Build the h2 content out to show the prophet's full name
+    fullName.textContent = `${prophet._____} ____________`; // fill in the blank
+    // Build the image portrait by setting all the relevant attributes
+    portrait.setAttribute('src', prophet.imageurl);
+    portrait.setAttribute('alt', `Portrait of ${prophet.____} ______________`); // fill in the blank
+    portrait.setAttribute('loading', 'lazy');
+    portrait.setAttribute('width', '340');
+    portrait.setAttribute('height', '440');
 
-  displayProphets(data.prophets);
+    // Append the section(card) with the created elements
+    card.appendChild(_______); //fill in the blank
+    card.appendChild(portrait);
 
-    const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
-        // card build code goes here
-    });
-    }
+    cards.appendChild(card);
+  }); // end of arrow function and forEach loop
+}
  
 }
 

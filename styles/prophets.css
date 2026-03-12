@@ -1,0 +1,131 @@
+/* ===== Base Styles ===== */
+
+body {
+	font-family: Roboto, sans-serif;
+	background-color: #f4f8fc;
+	color: #243447;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	color: #2a5d84;
+	margin-top: 1rem;
+}
+
+h2 {
+	margin: 1rem 0;
+	color: #3a6f97;
+	text-shadow: 0 0 20px rgba(120, 170, 210, 0.4);
+}
+
+/* ===== Key Legend ===== */
+
+.key {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 0.5rem;
+	background-color: #2a5d84;
+	color: white;
+	display: grid;
+	grid-template-columns: 0.8rem 1fr;
+	grid-gap: 0.25rem;
+	border-radius: 6px;
+}
+
+#keytitle {
+	font-size: larger;
+	grid-column: 1 / 3;
+}
+
+.key > div {
+	width: 0.75rem;
+	height: 0.75rem;
+	border: 1px solid #d6e6f5;
+}
+
+.key > p {
+	display: inline;
+	font-size: 0.75rem;
+}
+
+/* ===== Text ===== */
+
+p {
+	margin: 0;
+}
+
+/* ===== Grid Layout ===== */
+
+.grid {
+	display: grid;
+	grid-gap: 0.75rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	padding: 1rem;
+}
+
+/* ===== Card Sections ===== */
+
+section {
+	margin: 0.5rem;
+	padding: 1rem;
+	background-color: #e8f1f8;
+	border: 1px solid rgba(42, 93, 132, 0.15);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0 4px 12px rgba(0, 60, 120, 0.08);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 6px 18px rgba(0, 60, 120, 0.15);
+}
+
+section > p {
+	min-height: 60px;
+	font-size: smaller;
+	text-align: center;
+	color: #3b556e;
+}
+
+/* ===== Images ===== */
+
+img {
+	width: auto;
+	max-width: 325px;
+	height: 200px;
+	object-fit: cover;
+	box-shadow: 0 0 25px rgba(60, 120, 170, 0.4);
+	border: 1px solid #7faed3;
+	border-radius: 6px;
+}
+
+li > img {
+	width: auto;
+	height: 30px;
+}
+
+/* ===== Caption ===== */
+
+.caption {
+	position: absolute;
+	top: 1.5rem;
+	right: 2rem;
+	border: 1px solid #cfe3f3;
+	background-color: #f0f7ff;
+	padding: 0.25rem;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1rem 1fr;
+	border-radius: 5px;
+}
+
+/* ===== Lists ===== */
+
+.un {
+	list-style: none;
+}
