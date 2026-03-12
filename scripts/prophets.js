@@ -2,32 +2,43 @@ const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.
 
 const cards = document.querySelector('#cards');
 
+// Fetch prophet data
 async function getProphetData() {
-    // Fetch the data
+  const response = await fetch(url);
+  const data = await response.json();
+
+  displayProphets(data.prophets);
+}
+
+// Display prophets
 const displayProphets = (prophets) => {
   prophets.forEach((prophet) => {
-    // Create elements to add to the div.cards element
+
+    // Create elements
     let card = document.createElement('section');
-    let fullName = document.createElement('__'); // fill in the blank
+    let fullName = document.createElement('h2');
     let portrait = document.createElement('img');
 
-    // Build the h2 content out to show the prophet's full name
-    fullName.textContent = `${prophet._____} ____________`; // fill in the blank
-    // Build the image portrait by setting all the relevant attributes
+    // Prophet name
+    fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+
+    // Image attributes
     portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portrait of ${prophet.____} ______________`); // fill in the blank
+    portrait.setAttribute(
+      'alt',
+      `Portrait of ${prophet.name} ${prophet.lastname}`
+    );
     portrait.setAttribute('loading', 'lazy');
     portrait.setAttribute('width', '340');
     portrait.setAttribute('height', '440');
 
-    // Append the section(card) with the created elements
-    card.appendChild(_______); //fill in the blank
+    // Append elements
+    card.appendChild(fullName);
     card.appendChild(portrait);
 
     cards.appendChild(card);
-  }); // end of arrow function and forEach loop
-}
- 
-}
+  });
+};
 
- getProphetData();
+// Call function
+getProphetData();
