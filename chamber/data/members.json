@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Hotel Casa Mérida",
+      "address": "Calle 60 #500, Centro, Mérida",
+      "phone": "+52 999 123 4567",
+      "website": "https://casamerida.com",
+      "image": "hotel.webp",
+      "membership": 3,
+      "description": "Boutique hotel located in the historic center."
+    },
+    {
+      "name": "Café Montejo",
+      "address": "Paseo de Montejo, Mérida",
+      "phone": "+52 999 222 3344",
+      "website": "https://cafemontejo.mx",
+      "image": "cafe.webp",
+      "membership": 2,
+      "description": "Traditional Yucatecan coffee and bakery."
+    },
+    {
+      "name": "Yucatán Tech Solutions",
+      "address": "Col. Altabrisa, Mérida",
+      "phone": "+52 999 555 8899",
+      "website": "https://yuctech.com",
+      "image": "tech.webp",
+      "membership": 3,
+      "description": "Technology consulting and software development."
+    },
+    {
+      "name": "Mercado Artesanal Maya",
+      "address": "Centro Histórico, Mérida",
+      "phone": "+52 999 444 7788",
+      "website": "https://artesanalmaya.mx",
+      "image": "market.webp",
+      "membership": 1,
+      "description": "Local handmade crafts and artisan goods."
+    },
+    {
+      "name": "EcoTours Yucatán",
+      "address": "Av. Itzaes, Mérida",
+      "phone": "+52 999 111 2233",
+      "website": "https://ecotoursyucatan.com",
+      "image": "tour.webp",
+      "membership": 2,
+      "description": "Eco tourism experiences across Yucatán."
+    },
+    {
+      "name": "Restaurante La Chaya Maya",
+      "address": "Calle 62, Centro",
+      "phone": "+52 999 333 6677",
+      "website": "https://lachayamaya.com",
+      "image": "restaurant.webp",
+      "membership": 3,
+      "description": "Authentic regional Yucatecan cuisine."
+    },
+    {
+      "name": "Fitness Mérida Gym",
+      "address": "Francisco de Montejo",
+      "phone": "+52 999 888 1122",
+      "website": "https://fitnessmerida.mx",
+      "image": "gym.webp",
+      "membership": 1,
+      "description": "Modern fitness center and wellness programs."
+    }
+  ]
+}
