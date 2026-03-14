@@ -1,0 +1,140 @@
+/* ===== ROOT COLORS ===== */
+
+:root {
+    --primary: #2A5D84;
+    --secondary: #F2C94C;
+    --accent: #C65D3B;
+    --background: #F7F5F2;
+    --dark: #243447;
+}
+
+/* ===== GLOBAL ===== */
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    background: var(--background);
+    color: var(--dark);
+}
+
+h1, h2, h3 {
+    margin: 0.5rem 0;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background: var(--primary);
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+}
+
+/* ===== NAVIGATION ===== */
+
+#menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    padding: 0;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+/* ===== MAIN ===== */
+
+main {
+    padding: 1rem;
+}
+
+/* ===== DIRECTORY BUTTONS ===== */
+
+.menu {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.menu button {
+    background: var(--secondary);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ===== GRID VIEW ===== */
+
+#members.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid section {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.grid img {
+    width: 100px;
+}
+
+/* ===== LIST VIEW ===== */
+
+#members.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    background: white;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.list img {
+    display: none;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
