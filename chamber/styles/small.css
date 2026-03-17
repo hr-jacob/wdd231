@@ -72,6 +72,25 @@ header {
     border-top: 1px solid rgba(255,255,255,0.3);
 }
 
+/* hamburger button */
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* hide nav by default (mobile) */
+.navigation {
+    display: none;
+    flex-direction: column;
+}
+
+/* show when open */
+.navigation.open {
+    display: flex;
+}
+
 /* ===== MAIN ===== */
 
 main {
