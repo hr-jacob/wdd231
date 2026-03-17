@@ -1,67 +1,73 @@
 {
   "members": [
     {
-      "name": "Hotel Casa Mérida",
-      "address": "Calle 60 #500, Centro, Mérida",
-      "phone": "+52 999 123 4567",
-      "website": "https://casamerida.com",
-      "image": "hotel.webp",
+      "name": "La Chaya Maya",
+      "address": "Calle 55 #510, Centro, Mérida",
+      "phone": "+52 999 928 4780",
+      "website": "https://lachayamaya.com",
+      "image": "lachayamaya.webp",
       "membership": 3,
-      "description": "Boutique hotel located in the historic center."
+      "category": "Restaurant",
+      "description": "Traditional Yucatecan cuisine known for cochinita pibil and fresh handmade tortillas."
     },
     {
-      "name": "Café Montejo",
-      "address": "Paseo de Montejo, Mérida",
-      "phone": "+52 999 222 3344",
-      "website": "https://cafemontejo.mx",
-      "image": "cafe.webp",
+      "name": "Apoala Mexican Cuisine",
+      "address": "Calle 60 x 57, Parque Santa Lucía, Mérida",
+      "phone": "+52 999 923 1979",
+      "website": "https://apoala.mx",
+      "image": "apoala.webp",
       "membership": 2,
-      "description": "Traditional Yucatecan coffee and bakery."
+      "category": "Restaurant",
+      "description": "Modern Mexican restaurant offering Oaxacan flavors in an elegant atmosphere."
     },
     {
-      "name": "Yucatán Tech Solutions",
-      "address": "Col. Altabrisa, Mérida",
-      "phone": "+52 999 555 8899",
-      "website": "https://yuctech.com",
-      "image": "tech.webp",
-      "membership": 3,
-      "description": "Technology consulting and software development."
+      "name": "Oliva Enoteca",
+      "address": "Calle 47 #458, Centro, Mérida",
+      "phone": "+52 999 923 3379",
+      "website": "https://olivaenoteca.com",
+      "image": "oliva.webp",
+      "membership": 2,
+      "category": "Restaurant",
+      "description": "Italian-inspired restaurant featuring handmade pasta and Mediterranean dishes."
+    },
+    {
+      "name": "Panadería Santa Teresita",
+      "address": "Calle 50 #493, Centro, Mérida",
+      "phone": "+52 999 923 1234",
+      "website": "#",
+      "image": "santateresita.webp",
+      "membership": 2,
+      "category": "Bakery",
+      "description": "Traditional local bakery famous for fresh sweet bread and classic Mexican pastries."
+    },
+    {
+      "name": "Escargot Bakery",
+      "address": "Calle 47 #471, Centro, Mérida",
+      "phone": "+52 999 926 8890",
+      "website": "#",
+      "image": "escargot.webp",
+      "membership": 2,
+      "category": "Bakery",
+      "description": "French-style bakery offering artisan breads, croissants, and gourmet desserts."
+    },
+    {
+      "name": "Bowling Altabrisa",
+      "address": "Plaza Altabrisa, Mérida",
+      "phone": "+52 999 944 5566",
+      "website": "https://bowlingaltabrisa.mx",
+      "image": "bowling.webp",
+      "membership": 1,
+      "description": "Entertainment center featuring bowling lanes, arcade games, and family activities."
     },
     {
       "name": "Mercado Artesanal Maya",
-      "address": "Centro Histórico, Mérida",
-      "phone": "+52 999 444 7788",
-      "website": "https://artesanalmaya.mx",
-      "image": "market.webp",
+      "address": "Calle 58 #503, Centro, Mérida",
+      "phone": "+52 999 942 0000",
+      "website": "#",
+      "image": "mercadoartesanal.webp",
       "membership": 1,
-      "description": "Local handmade crafts and artisan goods."
-    },
-    {
-      "name": "EcoTours Yucatán",
-      "address": "Av. Itzaes, Mérida",
-      "phone": "+52 999 111 2233",
-      "website": "https://ecotoursyucatan.com",
-      "image": "tour.webp",
-      "membership": 2,
-      "description": "Eco tourism experiences across Yucatán."
-    },
-    {
-      "name": "Restaurante La Chaya Maya",
-      "address": "Calle 62, Centro",
-      "phone": "+52 999 333 6677",
-      "website": "https://lachayamaya.com",
-      "image": "restaurant.webp",
-      "membership": 3,
-      "description": "Authentic regional Yucatecan cuisine."
-    },
-    {
-      "name": "Fitness Mérida Gym",
-      "address": "Francisco de Montejo",
-      "phone": "+52 999 888 1122",
-      "website": "https://fitnessmerida.mx",
-      "image": "gym.webp",
-      "membership": 1,
-      "description": "Modern fitness center and wellness programs."
+      "category": "Entertainment",
+      "description": "Local artisan market featuring handmade crafts, textiles, and traditional souvenirs."
     }
   ]
 }
