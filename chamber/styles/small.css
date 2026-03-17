@@ -72,6 +72,18 @@ header {
     border-top: 1px solid rgba(255,255,255,0.3);
 }
 
+.navigation a.active {
+    font-weight: 700;
+    color: #2a5d84;
+    border-bottom: 2px solid #2a5d84;
+}
+
+#members img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* hamburger button */
 #menu {
     font-size: 2rem;

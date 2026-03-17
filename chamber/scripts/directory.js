@@ -7,46 +7,44 @@ async function getMembers() {
     displayMembers(data.members);
 }
 
-getMembers();
-
 function displayMembers(members) {
 
     members.forEach(member => {
 
-        // Create elements
         const card = document.createElement("section");
-        const logo = document.createElement("img");
+
         const name = document.createElement("h3");
-        const address = document.createElement("p");
-        const phone = document.createElement("p");
-        const description = document.createElement("p");
-        const website = document.createElement("a");
-
-        // Fill content
         name.textContent = member.name;
+
+        const image = document.createElement("img");
+        image.src = `images/${member.image}`;
+        image.alt = `${member.name} logo`;
+        image.loading = "lazy";
+
+        const address = document.createElement("p");
         address.textContent = member.address;
+
+        const phone = document.createElement("p");
         phone.textContent = member.phone;
-        description.textContent = member.description;
 
-        website.textContent = "Visit Website";
-        website.href = member.website;
-        website.target = "_blank";
+        const membership = document.createElement("p");
 
-        // Image
-        logo.setAttribute("src", `images/${member.image}`);
-        logo.setAttribute("alt", `${member.name} logo`);
-        logo.setAttribute("loading", "lazy");
-        logo.width = 150;
+        // convert number → text
+        let level = "";
+        if (member.membership === 1) level = "Member";
+        if (member.membership === 2) level = "Silver";
+        if (member.membership === 3) level = "Gold";
 
-        // Build card
-        card.appendChild(logo);
+        membership.textContent = `Membership: ${level}`;
+
+        card.appendChild(image);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
-        card.appendChild(description);
-        card.appendChild(website);
+        card.appendChild(membership);
 
-        // Add card to page
         container.appendChild(card);
     });
 }
+
+getMembers();
