@@ -13,47 +13,37 @@ function displayMembers(members) {
 
         const card = document.createElement("section");
 
-        // ✅ IMAGE (safe version)
+        // IMAGE
         const image = document.createElement("img");
-        image.src = `images/${member.image || "placeholder.webp"}`;
+        image.src = `images/${member.image}`;
         image.alt = `${member.name} logo`;
         image.loading = "lazy";
 
-        // ✅ NAME
+        // NAME
         const name = document.createElement("h3");
         name.textContent = member.name;
 
-        // ✅ ADDRESS
+        // ADDRESS
         const address = document.createElement("p");
         address.textContent = member.address;
 
-        // ✅ PHONE
+        // PHONE
         const phone = document.createElement("p");
         phone.textContent = member.phone;
 
-        // ✅ MEMBERSHIP LEVEL
+        // MEMBERSHIP LEVEL
         const membership = document.createElement("p");
 
-        // convert membership safely (number OR string)
-        let level = "";
+        const levels = {
+            1: "Member",
+            2: "Silver",
+            3: "Gold"
+        };
 
-        switch (Number(member.membership)) {
-            case 1:
-                level = "Member";
-                break;
-            case 2:
-                level = "Silver";
-                break;
-            case 3:
-                level = "Gold";
-                break;
-            default:
-                level = "Member";
-        }
+        membership.textContent =
+            `Membership Level: ${levels[member.membership]}`;
 
-        membership.textContent = `Membership Level: ${level}`;
-
-        // ✅ APPEND ELEMENTS
+        // ADD TO CARD
         card.appendChild(image);
         card.appendChild(name);
         card.appendChild(address);
