@@ -159,6 +159,13 @@ main {
     flex-direction: column;
 }
 
+#members img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
 .list section {
     background: white;
     padding: 1rem;
