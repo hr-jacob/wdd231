@@ -56,6 +56,7 @@ function displayMembers(members) {
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
+        card.appendChild(website);
         card.appendChild(membership);
 
         container.appendChild(card);
