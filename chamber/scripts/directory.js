@@ -32,12 +32,18 @@ function displayMembers(members) {
         phone.textContent = member.phone;
 
         // WEBSITE LINK
-        const website = document.createElement("a");
+        if (member.website && member.website !== "#") {
 
-        website.href = member.website;
-        website.textContent = member.website; // ← shows address
-        website.target = "_blank";
-        website.rel = "noopener noreferrer";
+            const website = document.createElement("a");
+
+            website.href = member.website;
+            website.textContent = member.website;
+            website.target = "_blank";
+            website.rel = "noopener noreferrer";
+
+            card.appendChild(website);
+
+}
 
         card.appendChild(website);
 
