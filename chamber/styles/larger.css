@@ -26,20 +26,3 @@ main {
 
 }
 
-@media screen and (min-width: 768px) {
-
-    #menu {
-        display: none; /* hide hamburger */
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .navigation li {
-        border: none;
-    }
-
-}
