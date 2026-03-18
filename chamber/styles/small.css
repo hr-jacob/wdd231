@@ -48,19 +48,10 @@ header {
 /* ===== NAVIGATION ===== */
 
 #menu {
-    font-size: 2rem;
     background: none;
     border: none;
-    cursor: pointer;
+    font-size: 2rem;
     color: white;
-}
-
-#menu::before {
-    content: "☰";
-}
-
-#menu.open::before {
-    content: "✖";
 }
 
 .navigation {
@@ -83,7 +74,41 @@ header {
 
 .navigation a.active {
     font-weight: 700;
-    border-bottom: 2px solid white;
+    color: #2a5d84;
+    border-bottom: 2px solid #2a5d84;
+}
+
+#members image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* hamburger button */
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* hide nav by default (mobile) */
+.navigation {
+    display: none;
+    flex-direction: column;
+}
+
+/* show when open */
+.navigation.open {
+    display: flex;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
 }
 
 /* ===== MAIN ===== */
@@ -92,7 +117,23 @@ main {
     padding: 1rem;
 }
 
-/* ===== DIRECTORY GRID ===== */
+/* ===== DIRECTORY BUTTONS ===== */
+
+.menu {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.menu button {
+    background: var(--secondary);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ===== GRID VIEW ===== */
 
 #members.grid {
     display: grid;
@@ -107,27 +148,8 @@ main {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* ✅ FIXED img selector */
-#members img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* ===== WEBSITE LINK STYLE ===== */
-
-#members a {
-    display: block;
-    margin-top: 0.5rem;
-    color: var(--primary);
-    font-weight: 600;
-    text-decoration: none;
-    word-break: break-all;
-}
-
-#members a:hover {
-    text-decoration: underline;
+.grid image {
+    width: 100px;
 }
 
 /* ===== LIST VIEW ===== */
@@ -137,12 +159,18 @@ main {
     flex-direction: column;
 }
 
+#members img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
 .list section {
     background: white;
     padding: 1rem;
     border-bottom: 1px solid #ddd;
 }
-
 /* ===== FOOTER ===== */
 
 footer {
