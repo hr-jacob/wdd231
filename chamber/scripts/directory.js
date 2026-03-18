@@ -50,3 +50,19 @@ function displayMembers(members) {
         container.appendChild(card);
     });
 }
+
+// ===== GRID / LIST TOGGLE =====
+
+const gridBtn = document.querySelector("#gridBtn");
+const listBtn = document.querySelector("#listBtn");
+const members = document.querySelector("#members");
+
+gridBtn.addEventListener("click", () => {
+    members.classList.add("grid");
+    members.classList.remove("list");
+});
+
+listBtn.addEventListener("click", () => {
+    members.classList.add("list");
+    members.classList.remove("grid");
+});
