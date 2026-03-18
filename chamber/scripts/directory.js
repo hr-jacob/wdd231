@@ -7,90 +7,46 @@ async function getMembers() {
     displayMembers(data.members);
 }
 
+getMembers();
+
 function displayMembers(members) {
 
     members.forEach(member => {
 
+        // Create elements
         const card = document.createElement("section");
-
-        // IMAGE
-        const image = document.createElement("img");
-        image.src = `images/${member.image}`;
-        image.alt = `${member.name} logo`;
-        image.loading = "lazy";
-
-        // NAME
+        const logo = document.createElement("img");
         const name = document.createElement("h3");
-        name.textContent = member.name;
-
-        // ADDRESS
         const address = document.createElement("p");
-        address.textContent = member.address;
-
-        // PHONE
         const phone = document.createElement("p");
+        const description = document.createElement("p");
+        const website = document.createElement("a");
+
+        // Fill content
+        name.textContent = member.name;
+        address.textContent = member.address;
         phone.textContent = member.phone;
+        description.textContent = member.description;
 
-        // MEMBERSHIP LEVEL
-        const membership = document.createElement("p");
+        website.textContent = "Visit Website";
+        website.href = member.website;
+        website.target = "_blank";
 
-        const levels = {
-            1: "Member",
-            2: "Silver",
-            3: "Gold"
-        };
+        // Image
+        logo.setAttribute("src", `images/${member.image}`);
+        logo.setAttribute("alt", `${member.name} logo`);
+        logo.setAttribute("loading", "lazy");
+        logo.width = 150;
 
-        membership.textContent =
-            `Membership Level: ${levels[member.membership]}`;
-
-        // ADD BASIC INFO
-        card.appendChild(image);
+        // Build card
+        card.appendChild(logo);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
-
-        // WEBSITE (ONLY IF EXISTS)
-        if (member.website && member.website !== "#") {
-            const website = document.createElement("a");
-            website.href = member.website;
-            website.textContent = "Visit Website";
-            website.target = "_blank";
-            website.rel = "noopener noreferrer";
-
-            card.appendChild(website);
-        }
-
-        card.appendChild(membership);
-
-        container.appendChild(card);
-    });
-}
-}
-
+        card.appendChild(description);
         card.appendChild(website);
 
-        // MEMBERSHIP LEVEL
-        const membership = document.createElement("p");
-
-        const levels = {
-            1: "Member",
-            2: "Silver",
-            3: "Gold"
-        };
-
-        membership.textContent =
-            `Membership Level: ${levels[member.membership]}`;
-
-        // ADD TO CARD
-        card.appendChild(image);
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(website); 
-        card.appendChild(membership);
-
+        // Add card to page
         container.appendChild(card);
     });
 }
-
-getMembers();
