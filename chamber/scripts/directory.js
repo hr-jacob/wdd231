@@ -6,11 +6,20 @@ const url = "data/members.json";
 const container = document.querySelector("#members");
 
 async function getMembers() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayMembers(data.members);
-}
+    try {
+        const response = await fetch(url);
 
+        if (!response.ok) {
+            throw new Error("members.json not found");
+        }
+
+        const data = await response.json();
+        displayMembers(data.members);
+
+    } catch (error) {
+        console.log("ERROR LOADING JSON:", error);
+    }
+}
 function displayMembers(members) {
 
     container.innerHTML = ""; // clear container
