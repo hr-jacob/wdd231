@@ -1,3 +1,7 @@
+// ===============================
+// LOAD MEMBERS
+// ===============================
+
 const url = "data/members.json";
 const container = document.querySelector("#members");
 
@@ -7,62 +11,76 @@ async function getMembers() {
     displayMembers(data.members);
 }
 
-getMembers();
-
 function displayMembers(members) {
+
+    container.innerHTML = ""; // clear container
 
     members.forEach(member => {
 
-        // Create elements
+        // CREATE ELEMENTS
         const card = document.createElement("section");
         const logo = document.createElement("img");
         const name = document.createElement("h3");
         const address = document.createElement("p");
         const phone = document.createElement("p");
         const description = document.createElement("p");
-        const website = document.createElement("a");
 
-        // Fill content
+        // CONTENT
         name.textContent = member.name;
         address.textContent = member.address;
         phone.textContent = member.phone;
         description.textContent = member.description;
 
-        website.textContent = "Visit Website";
-        website.href = member.website;
-        website.target = "_blank";
-
-        // Image
-        logo.setAttribute("src", `images/${member.image}`);
-        logo.setAttribute("alt", `${member.name} logo`);
-        logo.setAttribute("loading", "lazy");
+        // IMAGE
+        logo.src = `images/${member.image}`;
+        logo.alt = `${member.name} logo`;
+        logo.loading = "lazy";
         logo.width = 150;
 
-        // Build card
+        // BUILD CARD
         card.appendChild(logo);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(description);
-        card.appendChild(website);
 
-        // Add card to page
+        // WEBSITE (only if exists)
+        if (member.website && member.website !== "#") {
+            const website = document.createElement("a");
+            website.href = member.website;
+            website.textContent = "Visit Website";
+            website.target = "_blank";
+            card.appendChild(website);
+        }
+
+        // ADD TO PAGE
         container.appendChild(card);
     });
 }
 
-// ===== GRID / LIST TOGGLE =====
+getMembers();
 
-const gridBtn = document.querySelector("#gridBtn");
-const listBtn = document.querySelector("#listBtn");
-const members = document.querySelector("#members");
 
-gridBtn.addEventListener("click", () => {
-    members.classList.add("grid");
-    members.classList.remove("list");
-});
+// ===============================
+// GRID / LIST TOGGLE
+// ===============================
 
-listBtn.addEventListener("click", () => {
-    members.classList.add("list");
-    members.classList.remove("grid");
+document.addEventListener("DOMContentLoaded", () => {
+
+    const gridBtn = document.querySelector("#gridBtn");
+    const listBtn = document.querySelector("#listBtn");
+    const members = document.querySelector("#members");
+
+    if (!gridBtn || !listBtn || !members) return;
+
+    gridBtn.addEventListener("click", () => {
+        members.classList.add("grid");
+        members.classList.remove("list");
+    });
+
+    listBtn.addEventListener("click", () => {
+        members.classList.add("list");
+        members.classList.remove("grid");
+    });
+
 });

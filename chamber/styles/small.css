@@ -135,6 +135,14 @@ main {
     gap: 1rem;
 }
 
+#members.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list img {
+    display: none;
+}
 .grid section {
     background: white;
     padding: 1rem;
