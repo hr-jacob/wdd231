@@ -74,7 +74,7 @@ header {
 .navigation a.active {
     font-weight: 700;
     color: #2a5d84;
-    border-bottom: 2px solid #2a5d84;
+    border-bottom: 2px solid #f8f8f9;
 }
 
 /* hamburger button */
