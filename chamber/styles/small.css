@@ -48,52 +48,52 @@ header {
 /* ===== NAVIGATION ===== */
 
 #menu {
+    font-size: 2rem;
     background: none;
     border: none;
-    font-size: 2rem;
+    cursor: pointer;
     color: white;
 }
 
+/* mobile nav hidden by default */
 .navigation {
     list-style: none;
     display: none;
     flex-direction: column;
     padding: 0;
+    margin: 0;
 }
 
+/* show when hamburger opens */
 .navigation.open {
     display: flex;
 }
 
+/* LINKS — ALWAYS WHITE */
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    display: block;
+}
+
+/* force white in all states */
+.navigation a:visited,
+.navigation a:active,
+.navigation a:focus {
+    color: white;
+}
+
+/* hover effect */
+.navigation a:hover {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+}
+
+/* active page indicator (NO color change) */
 .navigation a.active {
-    color: var(--secondary); /* yellow */
-    font-weight: 700;
+    font-weight: bold;
     border-bottom: 2px solid var(--secondary);
-}
-
-.navigation a.active {
-    font-weight: 700;
-    color: #2a5d84;
-    border-bottom: 2px solid #f8f8f9;
-}
-
-/* hamburger button */
-#menu {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* hide nav by default (mobile) */
-.navigation {
-    display: none;
-    flex-direction: column;
-}
-
-/* show when open */
-.navigation.open {
-    display: flex;
 }
 
 /* ===== MAIN ===== */
@@ -126,14 +126,6 @@ main {
     gap: 1rem;
 }
 
-#members.list {
-    display: flex;
-    flex-direction: column;
-}
-
-.list img {
-    display: none;
-}
 .grid section {
     background: white;
     padding: 1rem;
