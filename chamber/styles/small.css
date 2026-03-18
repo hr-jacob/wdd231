@@ -47,53 +47,50 @@ header {
 
 /* ===== NAVIGATION ===== */
 
+/* NAV ALWAYS WHITE */
+header nav {
+    background: white;
+    width: 100%;
+}
+
+/* hamburger button */
 #menu {
     font-size: 2rem;
     background: none;
     border: none;
     cursor: pointer;
-    color: white;
+    color: var(--primary);
 }
 
-/* mobile nav hidden by default */
+/* navigation list */
 .navigation {
     list-style: none;
     display: none;
     flex-direction: column;
     padding: 0;
     margin: 0;
+    background: white;
 }
 
-/* show when hamburger opens */
+/* show menu when open */
 .navigation.open {
     display: flex;
 }
 
-/* LINKS — ALWAYS WHITE */
+/* nav links */
 .navigation a {
-    color: white;
-    text-decoration: none;
-    padding: 0.75rem;
     display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
 }
 
-/* force white in all states */
-.navigation a:visited,
-.navigation a:active,
-.navigation a:focus {
-    color: white;
-}
-
-/* hover effect */
-.navigation a:hover {
-    background-color: rgba(255,255,255,0.2);
-    border-radius: 4px;
-}
-
-/* active page indicator (NO color change) */
+/* active page */
 .navigation a.active {
-    font-weight: bold;
-    border-bottom: 2px solid var(--secondary);
+    color: var(--primary);
+    font-weight: 700;
+    border-bottom: 3px solid var(--secondary);
 }
 
 /* ===== MAIN ===== */
@@ -136,6 +133,7 @@ main {
 
 .grid img {
     width: 100px;
+    height: auto;
 }
 
 /* ===== LIST VIEW ===== */
@@ -162,4 +160,23 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+/* ===== DESKTOP VIEW ===== */
+
+@media screen and (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navigation a {
+        padding: 1rem;
+    }
 }
