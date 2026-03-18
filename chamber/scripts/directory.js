@@ -31,13 +31,11 @@ function displayMembers(members) {
         const phone = document.createElement("p");
         phone.textContent = member.phone;
 
-        // WEBSITE LINK
+       // WEBSITE LINK
         const website = document.createElement("a");
         website.href = member.website;
         website.textContent = "Visit Website";
         website.target = "_blank";
-
-        card.appendChild(website);
 
         // MEMBERSHIP LEVEL
         const membership = document.createElement("p");
@@ -56,7 +54,7 @@ function displayMembers(members) {
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
-        card.appendChild(website);
+        card.appendChild(website); 
         card.appendChild(membership);
 
         container.appendChild(card);
