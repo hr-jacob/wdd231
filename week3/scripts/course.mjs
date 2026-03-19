@@ -29,7 +29,8 @@ const byuiCourse = {
       } else {
         this.sections[sectionIndex].enrolled--;
       }
-      renderSections(this.sections);
     }
   },
 };
+
+export default byuiCourse;
