@@ -101,6 +101,8 @@ header {
 .hero {
   position: relative;
   text-align: center;
+  display: block;
+  
 }
 
 .hero img {
@@ -137,6 +139,10 @@ header {
 /* ===== MAIN ===== */
 
 main {
+    padding: 0;
+}
+
+.content {
     padding: 1rem;
 }
 
