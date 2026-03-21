@@ -1,4 +1,4 @@
-const apiKey = "Ya6bfab2eb1f1a0ffa2e66a5bd3265f9b";
+const apiKey = "2ffffd2d943f1b272cace4b35a33bf52";
 
 // Mérida, Yucatán
 const lat = 20.9674;
