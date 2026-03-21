@@ -29,6 +29,7 @@
 <script src="scripts/date.js" defer></script>
 <script src="scripts/directory.js" defer></script>
 <script src="scripts/navigation.js" defer></script>
+<script src="scripts/weather.js" defer></script>
 
 <!-- Facebook Open Graph Meta -->
 <meta property="og:url" content="https://yourdomain.com/chamber/index.html">
@@ -104,10 +105,16 @@
 
         <!-- WEATHER -->
         <section class="card weather">
-            <h2>Weather</h2>
-            <p><strong>Temperature:</strong> 32°C</p>
-            <p><strong>Condition:</strong> Sunny</p>
-            <p><strong>Humidity:</strong> 60%</p>
+        <h2>Weather</h2>
+
+        <p><strong>Temperature:</strong>
+            <span id="current-temp"></span>
+        </p>
+
+        <p id="weather-desc"></p>
+
+        <h3>3-Day Forecast</h3>
+        <div id="forecast"></div>
         </section>
 
         <!-- SPOTLIGHTS -->
