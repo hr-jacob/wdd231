@@ -186,12 +186,8 @@ header {
 }
 
 .spotlight img {
-    width: 10px;      /* control size here */
+    width: 100px;   /* change this number */
     height: auto;
-    max-width: 100%;
-    object-fit: contain;
-    margin: 0.5rem auto;
-    display: block;
 }
 
 /* ===== LIST VIEW ===== */
