@@ -18,8 +18,7 @@ async function loadSpotlights() {
     displaySpotlights(spotlights);
 }
 
-const card = document.createElement("section");
-card.classList.add("card");
+
 
 function displaySpotlights(members) {
     container.innerHTML = "";
