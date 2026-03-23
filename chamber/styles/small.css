@@ -186,7 +186,7 @@ header {
 }
 
 .spotlight img {
-    width: 120px;      /* control size here */
+    width: 10px;      /* control size here */
     height: auto;
     max-width: 100%;
     object-fit: contain;
