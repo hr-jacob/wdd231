@@ -1,98 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Mérida Chamber of Commerce</title>
-
-<meta name="description" content="Official business directory of the Mérida Yucatán Chamber of Commerce featuring local businesses, services, and community economic resources.">
-
-<meta name="author" content="Jacob Herrera">
-
-<!-- Favicon -->
-<link rel="icon" href="images/mcc_logo.ico" type="image/x-icon">
-
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-<!-- CSS -->
-<link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/larger.css">
-
-<!-- JS -->
-
-<script src="scripts/date.js" defer></script>
-<script src="scripts/directory.js" defer></script>
-<script src="scripts/navigation.js" defer></script>
-<script src="scripts/weather.js" defer></script>
-<script src="scripts/spotlights.js" defer></script>
-
-<!-- Facebook Open Graph Meta -->
-<meta property="og:title" content="Mérida Chamber of Commerce Business Directory">
-<meta property="og:description" content="Explore local businesses and economic opportunities through the official Mérida Yucatán Chamber of Commerce directory.">
-<meta property="og:image" content="https://hr-jacob.github.io/wdd231/chamber/images/chamber-preview.jpg">
-<meta property="og:url" content="https://hr-jacob.github.io/wdd231/chamber/index.html">
-<meta property="og:type" content="website">
-
-</head>
-<body>
-
-    <header>
-
-<div class="header-container">
-
-    <!-- Logo + Site Name -->
-    <div class="branding">
-        <img src="images/mcc-logo-header.png" alt="Mérida Chamber of Commerce Logo" class="logo">
-        <div>
-            <h1>Mérida Chamber of Commerce</h1>
-        </div>
-    </div>
-
-    <!-- Menu Button (mobile) -->
-    <button id="menu" aria-label="Menu">☰</button>
-
-    <!-- Navigation -->
-    <nav>
-        <ul class="navigation">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-    </ul>
-    </nav>
-
-</div>
-
-</header>
-
-<!-- HERO SECTION (FULL WIDTH) -->
-<section class="hero">
-    <picture>
-        <img src="images/hero-merida.webp"
-             alt="Downtown Mérida business district">
-    </picture>
-
-    <div class="hero-text">
-        <h2>Supporting Local Business in Mérida</h2>
-        <p>Connecting businesses, strengthening community, growing opportunity.</p>
-        <a href="join.html" class="cta-button">Join the Chamber</a>
-    </div>
-</section>
-
 <main>
 
     <div class="content">
         <!-- events, weather, spotlights go here -->
     </div>
 
-
     <!-- MAIN CONTENT GRID -->
     <section class="home-grid">
+        <h2>Home Information</h2>
 
         <!-- EVENTS -->
         <section class="card events">
@@ -106,44 +20,24 @@
 
         <!-- WEATHER -->
         <section class="card weather">
-        <h2>Weather</h2>
+            <h2>Weather</h2>
 
-        <p><strong>Temperature:</strong>
-            <span id="current-temp"></span>
-        </p>
+            <p><strong>Temperature:</strong>
+                <span id="current-temp"></span>
+            </p>
 
-        <p id="weather-desc"></p>
+            <p id="weather-desc"></p>
 
-        <h3>3-Day Forecast</h3>
-        <div id="forecast"></div>
+            <h3>3-Day Forecast</h3>
+            <div id="forecast"></div>
         </section>
 
         <!-- SPOTLIGHTS -->
-
-        <section class="spotlight-container">
-        <h2>Business Spotlights</h2>
-
-        <div id="spotlight-container"></div>
-
+        <section class="card spotlight-container">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-container"></div>
         </section>
 
-                    </div>
-
-                </section>
-
-            </section>
+    </section>
 
 </main>
-
-<footer>
-
-<p>
-© <span id="year"></span> Mérida Chamber of Commerce |
-Jacob Herrera | WDD131
-</p>
-<p id="lastModified"></p>
-
-</footer>
-
-</body>
-</html>
