@@ -185,9 +185,13 @@ header {
     gap: 1rem;
 }
 
-.spotlight {
-    display: flex;
-    flex-direction: column;
+/* ===== SPOTLIGHT IMAGE SIZE ===== */
+
+.spotlight img {
+    width: 100%;
+    height: 150px;        /* controls how tall images appear */
+    object-fit: cover;    /* crops image nicely */
+    border-radius: 8px;
 }
 
 /* ===== LIST VIEW ===== */
