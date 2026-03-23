@@ -29,22 +29,22 @@ function displaySpotlights(members) {
   const container = document.querySelector("#spotlight-container");
   container.innerHTML = "";
 
-selected.forEach(member => {
+  selected.forEach(member => {
 
-  const card = document.createElement("section");
-  card.classList.add("card", "spotlight");
+    const card = document.createElement("section");
+    card.classList.add("spotlight");
 
-  card.innerHTML = `
-    <h3>${member.name}</h3>
-    <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
-    <p><strong>Phone:</strong> ${member.phone}</p>
-    <p><strong>Address:</strong> ${member.address}</p>
-    <p><strong>Membership:</strong> ${getMembershipLevel(member.membership)}</p>
-    <a href="${member.website}" target="_blank">Visit Website</a>
-  `;
+    card.innerHTML = `
+      <h3>${member.name}</h3>
+      <img src="${member.image}" alt="${member.name} logo" loading="lazy">
+      <p><strong>Phone:</strong> ${member.phone}</p>
+      <p><strong>Address:</strong> ${member.address}</p>
+      <p><strong>Membership:</strong> ${getMembershipLevel(member.membership)}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+    `;
 
-  container.appendChild(card);
-});
+    container.appendChild(card);
+  });
 }
 
 function getMembershipLevel(level) {
