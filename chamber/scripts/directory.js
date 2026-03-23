@@ -1,19 +1,9 @@
 // ===============================
-// SELECT MEMBERS CONTAINER
+// LOAD MEMBERS
 // ===============================
 
 const url = "data/members.json";
 const container = document.querySelector("#members");
-
-// ✅ ONLY RUN DIRECTORY CODE IF #members EXISTS
-if (container) {
-    getMembers();
-    setupViewButtons();
-}
-
-// ===============================
-// LOAD MEMBERS
-// ===============================
 
 async function getMembers() {
     try {
@@ -30,14 +20,9 @@ async function getMembers() {
         console.log("ERROR LOADING JSON:", error);
     }
 }
-
-// ===============================
-// DISPLAY MEMBERS
-// ===============================
-
 function displayMembers(members) {
 
-    container.innerHTML = "";
+    container.innerHTML = ""; // clear container
 
     members.forEach(member => {
 
@@ -68,7 +53,7 @@ function displayMembers(members) {
         card.appendChild(phone);
         card.appendChild(description);
 
-        // WEBSITE (if exists)
+        // WEBSITE (only if exists)
         if (member.website && member.website !== "#") {
             const website = document.createElement("a");
             website.href = member.website;
@@ -82,25 +67,29 @@ function displayMembers(members) {
     });
 }
 
+getMembers();
+
+
 // ===============================
 // GRID / LIST TOGGLE
 // ===============================
 
-function setupViewButtons() {
+document.addEventListener("DOMContentLoaded", () => {
 
     const gridBtn = document.querySelector("#gridBtn");
     const listBtn = document.querySelector("#listBtn");
+    const members = document.querySelector("#members");
 
-    // ✅ Prevent errors on pages without buttons
-    if (!gridBtn || !listBtn) return;
+    if (!gridBtn || !listBtn || !members) return;
 
     gridBtn.addEventListener("click", () => {
-        container.classList.add("grid");
-        container.classList.remove("list");
+        members.classList.add("grid");
+        members.classList.remove("list");
     });
 
     listBtn.addEventListener("click", () => {
-        container.classList.add("list");
-        container.classList.remove("grid");
+        members.classList.add("list");
+        members.classList.remove("grid");
     });
-}
+
+});
