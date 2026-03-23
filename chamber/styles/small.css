@@ -185,9 +185,9 @@ header {
     gap: 1rem;
 }
 
-.spotlight img {
-    width: 100px;   /* change this number */
-    height: auto;
+.spotlight {
+    display: flex;
+    flex-direction: column;
 }
 
 /* ===== LIST VIEW ===== */
