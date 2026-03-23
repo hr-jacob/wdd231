@@ -14,19 +14,18 @@ async function loadSpotlights() {
 
 function displaySpotlights(members) {
 
-  // keep only gold (3) & silver (2)
+  const container = document.querySelector("#spotlight-container");
+  if (!container) return;
+
   const qualified = members.filter(member =>
     member.membership === 2 || member.membership === 3
   );
 
-  // shuffle randomly
-  const shuffled = qualified.sort(() => 0.5 - Math.random());
+  const shuffled = [...qualified].sort(() => 0.5 - Math.random());
 
-  // pick 2 or 3 randomly
   const count = Math.floor(Math.random() * 2) + 2;
   const selected = shuffled.slice(0, count);
 
-  const container = document.querySelector("#spotlight-container");
   container.innerHTML = "";
 
   selected.forEach(member => {
@@ -36,7 +35,10 @@ function displaySpotlights(members) {
 
     card.innerHTML = `
       <h3>${member.name}</h3>
-      <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
+      <img src="images/${member.image}" 
+           alt="${member.name} logo"
+           loading="lazy"
+           width="150">
       <p><strong>Phone:</strong> ${member.phone}</p>
       <p><strong>Address:</strong> ${member.address}</p>
       <p><strong>Membership:</strong> ${getMembershipLevel(member.membership)}</p>
