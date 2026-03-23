@@ -1,54 +1,56 @@
-const container = document.querySelector("#spotlight-container");
+const spotlightURL = "data/members.json"; // adjust path if needed
 
 async function loadSpotlights() {
-    const response = await fetch("data/members.json");
+  try {
+    const response = await fetch(spotlightURL);
     const data = await response.json();
 
-    // Only Gold (3) and Silver (2)
-    const qualified = data.members.filter(
-        member => member.membership >= 2
-    );
+    displaySpotlights(data.members);
 
-    // Shuffle array
-    const shuffled = qualified.sort(() => 0.5 - Math.random());
-
-    // Pick 3
-    const spotlights = shuffled.slice(0, 3);
-
-    displaySpotlights(spotlights);
+  } catch (error) {
+    console.error("Spotlight error:", error);
+  }
 }
-
-
 
 function displaySpotlights(members) {
-    container.innerHTML = "";
 
-    members.forEach(member => {
+  // keep only gold (3) & silver (2)
+  const qualified = members.filter(member =>
+    member.membership === 2 || member.membership === 3
+  );
 
-        // ✅ SAME CARD CLASS AS DIRECTORY
-        const card = document.createElement("section");
-        card.classList.add("card");
+  // shuffle randomly
+  const shuffled = qualified.sort(() => 0.5 - Math.random());
 
-        card.innerHTML = `
-            <h3>${member.name}</h3>
-            <img src="images/${member.image}" 
-                 alt="${member.name} logo" loading="lazy">
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank">
-                Visit Website
-            </a>
-            <p class="membership">Member Level: ${getLevel(member.membership)}</p>
-        `;
+  // pick 2 or 3 randomly
+  const count = Math.floor(Math.random() * 2) + 2;
+  const selected = shuffled.slice(0, count);
 
-        container.appendChild(card);
-    });
+  const container = document.querySelector("#spotlight-container");
+  container.innerHTML = "";
+
+  selected.forEach(member => {
+
+    const card = document.createElement("section");
+    card.classList.add("spotlight");
+
+    card.innerHTML = `
+      <h3>${member.name}</h3>
+      <img src="${member.image}" alt="${member.name} logo" loading="lazy">
+      <p><strong>Phone:</strong> ${member.phone}</p>
+      <p><strong>Address:</strong> ${member.address}</p>
+      <p><strong>Membership:</strong> ${getMembershipLevel(member.membership)}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+    `;
+
+    container.appendChild(card);
+  });
 }
 
-function getLevel(level) {
-    if (level === 3) return "Gold";
-    if (level === 2) return "Silver";
-    return "Member";
+function getMembershipLevel(level) {
+  if (level === 3) return "Gold Member";
+  if (level === 2) return "Silver Member";
+  return "Member";
 }
 
 loadSpotlights();
