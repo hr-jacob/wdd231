@@ -7,6 +7,7 @@ const courses = [
 ];
 
 const container = document.querySelector("#courses");
+const courseDetails = document.querySelector("#course-details");
 const credits = document.querySelector("#credits");
 
 function displayCourses(list){
