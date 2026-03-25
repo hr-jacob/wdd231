@@ -7,7 +7,7 @@ const courses = [
 ];
 
 const container = document.querySelector("#courses");
-const courseDetails = document.querySelector("#course-details");
+const courseDetails = document.querySelector("#courseDetails");
 const credits = document.querySelector("#credits");
 
 function displayCourses(list){
@@ -34,7 +34,7 @@ credits.textContent = total;
 
 }
 
-displayCourses(courses);
+displayCourses(courseDetails);
 
 document.querySelector("#all").addEventListener("click", ()=>{
 displayCourses(courses);
