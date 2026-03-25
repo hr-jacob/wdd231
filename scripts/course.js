@@ -7,6 +7,7 @@ const courses = [
 ];
 
 const container = document.querySelector("#courses");
+const courseDetails = document.querySelector("#course-details");
 const credits = document.querySelector("#credits");
 
 function displayCourses(list){
@@ -23,7 +24,9 @@ if(course.completed){
 card.classList.add("completed");
 }
 
-container.appendChild(card);
+card.addEventListener("click", () => {
+  displayCourseDetails(course);
+});
 
 });
 
@@ -47,24 +50,22 @@ document.querySelector("#cse").addEventListener("click", ()=>{
 displayCourses(courses.filter(c => c.code.includes("CSE")));
 });
 
-setTitle(byuiCourse);
-setSectionSelection(byuiCourse.sections);
-renderSections(byuiCourse.sections);
+//setTitle(byuiCourse);
+//setSectionSelection(byuiCourse.sections);
+//renderSections(byuiCourse.sections);
 
 function displayCourseDetails(course) {
   courseDetails.innerHTML = `
     <button id="closeModal">❌</button>
-    <h2>${course.subject} ${course.number}</h2>
-    <h3>${course.title}</h3>
-    <p><strong>Credits</strong>: ${course.credits}</p>
-    <p><strong>Certificate</strong>: ${course.certificate}</p>
-    <p>${course.description}</p>
-    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    <h2>${course.code}</h2>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Status:</strong> ${
+      course.completed ? "Completed" : "In Progress"
+    }</p>
   `;
 
   courseDetails.showModal();
 
-  /* ✅ SELECT BUTTON AFTER CREATING IT */
   const closeModal = document.querySelector("#closeModal");
 
   closeModal.addEventListener("click", () => {
