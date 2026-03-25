@@ -6,9 +6,8 @@ const courses = [
 {code:"CSE111", credits:2, completed:false}
 ];
 
-const container = document.querySelector("#courses");
-const courseDetails = document.querySelector("#course-details");
-const credits = document.querySelector("#credits");
+const modalContent = document.querySelector("#modal-content");
+const closeModalBtn = document.querySelector("#closeModal");
 
 function displayCourses(list){
 
@@ -50,19 +49,17 @@ displayCourses(courses.filter(c => c.code.includes("CSE")));
 
 function displayCourseDetails(course){
 
-courseDetails.innerHTML = `
-<button id="closeModal">❌</button>
+modalContent.innerHTML = `
 <h2>${course.code}</h2>
 <p><strong>Credits:</strong> ${course.credits}</p>
 <p><strong>Status:</strong> ${
-course.completed ? "Completed" : "In Progress"
+  course.completed ? "Completed" : "In Progress"
 }</p>
 `;
 
-courseDetails.showModal();
-
-document.querySelector("#closeModal")
-.addEventListener("click", () => {
-courseDetails.close();
+closeModalBtn.addEventListener("click", () => {
+  courseDetails.close();
 });
+
+courseDetails.showModal();
 }
