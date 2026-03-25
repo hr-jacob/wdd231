@@ -52,7 +52,6 @@ setSectionSelection(byuiCourse.sections);
 renderSections(byuiCourse.sections);
 
 function displayCourseDetails(course) {
-  courseDetails.innerHTML = '';
   courseDetails.innerHTML = `
     <button id="closeModal">❌</button>
     <h2>${course.subject} ${course.number}</h2>
@@ -62,8 +61,12 @@ function displayCourseDetails(course) {
     <p>${course.description}</p>
     <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
   `;
+
   courseDetails.showModal();
-  
+
+  /* ✅ SELECT BUTTON AFTER CREATING IT */
+  const closeModal = document.querySelector("#closeModal");
+
   closeModal.addEventListener("click", () => {
     courseDetails.close();
   });
