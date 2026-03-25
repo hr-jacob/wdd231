@@ -17,11 +17,10 @@ container.innerHTML="";
 list.forEach(course => {
 
 const card = document.createElement("div");
-
 card.textContent = course.code;
 
 if(course.completed){
-card.classList.add("completed");
+  card.classList.add("completed");
 }
 
 card.addEventListener("click", () => {
@@ -29,13 +28,10 @@ card.addEventListener("click", () => {
 });
 
 container.appendChild(card);
-
 });
 
 const total = list.reduce((sum, course)=> sum + course.credits,0);
-
 credits.textContent = total;
-
 }
 
 displayCourses(courses);
@@ -50,26 +46,23 @@ displayCourses(courses.filter(c => c.code.includes("WDD")));
 
 document.querySelector("#cse").addEventListener("click", ()=>{
 displayCourses(courses.filter(c => c.code.includes("CSE")));
-});z
+});
 
-function displayCourseDetails(course) {
+function displayCourseDetails(course){
 
 courseDetails.innerHTML = `
-  <button id="closeModal">❌</button>
-  <h2>${course.code}</h2>
-  <p><strong>Credits:</strong> ${course.credits}</p>
-  <p><strong>Status:</strong> ${
-    course.completed ? "Completed" : "In Progress"
-  }</p>
+<button id="closeModal">❌</button>
+<h2>${course.code}</h2>
+<p><strong>Credits:</strong> ${course.credits}</p>
+<p><strong>Status:</strong> ${
+course.completed ? "Completed" : "In Progress"
+}</p>
 `;
 
 courseDetails.showModal();
 
-/* close button */
-const closeModal = document.querySelector("#closeModal");
-
-closeModal.addEventListener("click", () => {
-  courseDetails.close();
+document.querySelector("#closeModal")
+.addEventListener("click", () => {
+courseDetails.close();
 });
-
 }
