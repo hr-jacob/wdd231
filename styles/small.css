@@ -135,6 +135,7 @@ dialog {
   border-radius: .25rem;
   padding: 1rem;
   background-color: #fff;
+  cursor: pointer;
   box-shadow: 0 0 3rem #777;
   width: 90%;
   max-width: 600px;
