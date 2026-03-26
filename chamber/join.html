@@ -1,1 +1,95 @@
-<p>HOLA</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mérida Chamber of Commerce | Join</title>
+
+<meta name="description" content="Official business directory of the Mérida Yucatán Chamber of Commerce featuring local businesses, services, and community economic resources.">
+
+<meta name="author" content="Jacob Herrera">
+
+<!-- Favicon -->
+<link rel="icon" href="images/mcc_logo.ico" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<!-- JS -->
+
+<script src="scripts/date.js" defer></script>
+<script src="scripts/directory.js" defer></script>
+<script src="scripts/navigation.js" defer></script>
+
+<!-- Facebook Open Graph Meta -->
+<meta property="og:title" content="Mérida Chamber of Commerce | Join">
+<meta property="og:description" content="Explore local businesses and economic opportunities through the official Mérida Yucatán Chamber of Commerce directory.">
+<meta property="og:image" content="https://yourdomain.com/images/chamber-preview.jpg">
+<meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
+<meta property="og:type" content="website">
+
+</head>
+<body>
+
+<header>
+
+    <div class="header-container">
+
+        <!-- Logo + Site Name -->
+        <div class="branding">
+            <img src="images/mcc-logo-header.png" alt="Mérida Chamber of Commerce Logo" class="logo">
+            <div>
+                <h1>Mérida Chamber of Commerce</h1>
+            </div>
+        </div>
+
+        <!-- Menu Button (mobile) -->
+        <button id="menu" aria-label="Menu">☰</button>
+
+        <!-- Navigation -->
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+    <h2>Business Directory</h2>
+
+    <div class="menu">
+    <button id="gridBtn">Grid</button>
+    <button id="listBtn">List</button>
+</div>
+
+<div id="members" class="grid"></div>
+
+</main>
+
+<footer>
+
+<p>
+© <span id="year"></span> Mérida Chamber of Commerce |
+Jacob Herrera | WDD131
+</p>
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
