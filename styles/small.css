@@ -128,7 +128,7 @@ border-radius: 4px;
 background: #e5e7eb;
 text-align: center;
 font-weight: bold;
-cursor: pointer; /* 👈 makes hand cursor */
+cursor: pointer; 
 }
 
 dialog {
