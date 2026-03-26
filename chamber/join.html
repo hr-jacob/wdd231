@@ -31,167 +31,16 @@
 <script src="scripts/navigation.js" defer></script>
 
 <!-- Facebook Open Graph Meta -->
-<meta property="og:title" content="Mérida Chamber of Commerce | Join">
+<meta property="og:title" content="Mérida Chamber of Commerce | Business Directory">
 <meta property="og:description" content="Explore local businesses and economic opportunities through the official Mérida Yucatán Chamber of Commerce directory.">
 <meta property="og:image" content="https://yourdomain.com/images/chamber-preview.jpg">
-<meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
+<meta property="og:url" content="https://yourdomain.com/chamber/join.html">
 <meta property="og:type" content="website">
 
 </head>
-<body>
 
-    <header>
 
-<div class="header-container">
 
-    <!-- Logo + Site Name -->
-    <div class="branding">
-        <img src="images/mcc-logo-header.png" alt="Mérida Chamber of Commerce Logo" class="logo">
-        <div>
-            <h1>Mérida Chamber of Commerce</h1>
-        </div>
-    </div>
-
-    <!-- Menu Button (mobile) -->
-    <button id="menu" aria-label="Menu">☰</button>
-
-    <!-- Navigation -->
-    <nav>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html" class="active">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-        </ul>
-    </nav>
-
-</div>
-
-</header>
-
-<main class="join-page">
-
-<h1>Join the Chamber</h1>
-
-<div class="join-container">
-
-<!-- ================= FORM ================= -->
-<form method="get" action="thankyou.html" id="joinForm">
-
-<!-- First Name -->
-<label>
-First Name
-<input type="text"
-name="firstName"
-required
-title="Enter your first name"
-autocomplete="given-name">
-</label>
-
-<!-- Last Name -->
-<label>
-Last Name
-<input type="text"
-name="lastName"
-required
-title="Enter your last name"
-autocomplete="family-name">
-</label>
-
-<!-- Organization Title -->
-<label>
-Organization Title
-<input type="text"
-name="orgTitle"
-title="Your position in the organization"
-autocomplete="organization-title"
-pattern="[A-Za-z\\-\\s]{7,}">
-</label>
-
-<!-- Email -->
-<label>
-Email
-<input type="email"
-name="email"
-required
-title="Enter a valid email address"
-autocomplete="email"
-placeholder="example@email.com">
-</label>
-
-<!-- Phone -->
-<label>
-Mobile Phone
-<input type="tel"
-name="phone"
-required
-title="Enter your mobile phone number"
-autocomplete="tel">
-</label>
-
-<!-- Organization Name -->
-<label>
-Business Name
-<input type="text"
-name="organization"
-required
-title="Organization name"
-autocomplete="organization">
-</label>
-
-<!-- Membership Level -->
-<label>
-Membership Level
-<select name="membership" required>
-<option value="">Select a level</option>
-<option value="np">NP Membership</option>
-<option value="bronze">Bronze Membership</option>
-<option value="silver">Silver Membership</option>
-<option value="gold">Gold Membership</option>
-</select>
-</label>
-
-<!-- Description -->
-<label>
-Business Description
-<textarea name="description"
-title="Describe your organization"></textarea>
-</label>
-
-<!-- Hidden Timestamp -->
-<input type="hidden" id="timestamp" name="timestamp">
-
-<!-- Submit -->
-<input type="submit" value="Apply for Membership">
-
-</form>
-
-<!-- ================= MEMBERSHIP CARDS ================= -->
-<div class="membership-cards">
-
-<div class="card">
-<h3>NP Membership</h3>
-<a href="#" data-modal="npModal">View Benefits</a>
-</div>
-
-<div class="card">
-<h3>Bronze Membership</h3>
-<a href="#" data-modal="bronzeModal">View Benefits</a>
-</div>
-
-<div class="card">
-<h3>Silver Membership</h3>
-<a href="#" data-modal="silverModal">View Benefits</a>
-</div>
-
-<div class="card">
-<h3>Gold Membership</h3>
-<a href="#" data-modal="goldModal">View Benefits</a>
-</div>
-
-</div>
-
-</div>
-</main>
 
 <footer>
 
