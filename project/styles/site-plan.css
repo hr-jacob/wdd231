@@ -1,0 +1,77 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
+
+/* COLOR VARIABLES */
+:root {
+    --beige: #F5E6D3;
+    --terracotta: #C96A3D;
+    --dark: #3A2E2A;
+}
+
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--beige);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: var(--terracotta);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 40px;
+}
+
+/* COLOR BOXES */
+.color {
+    padding: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.beige {
+    background-color: #F5E6D3;
+    border: 2px solid #ccc;
+}
+
+.terracotta {
+    background-color: #C96A3D;
+    color: white;
+}
+
+/* WIREFRAMES */
+.wireframe {
+    border: 2px dashed var(--dark);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.wireframe p {
+    border: 1px solid var(--dark);
+    padding: 10px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.desktop p {
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
+}
