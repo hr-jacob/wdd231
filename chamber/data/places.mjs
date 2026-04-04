@@ -44,7 +44,7 @@ export const places = [
   {
     name: "Museo Casa Montejo",
     address: "Calle 63",
-    image: "images/discover/montejo.webp",
+    image: "images/montejo.webp",
     description: "Colonial museum showing Mérida history."
   }
 ];
