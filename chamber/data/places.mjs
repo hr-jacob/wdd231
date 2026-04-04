@@ -14,7 +14,7 @@ export const places = [
   {
     name: "Catedral de Mérida",
     address: "Plaza Grande",
-    image: "images/discover/catedral.webp",
+    image: "images/catedral.webp",
     description: "One of the oldest cathedrals in the Americas."
   },
   {
