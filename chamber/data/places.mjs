@@ -32,7 +32,7 @@ export const places = [
   {
     name: "Puerto Progreso",
     address: "Progreso, Yucatán",
-    image: "images/discover/progreso.webp",
+    image: "images/progreso.webp",
     description: "Popular beach destination near Mérida."
   },
   {
