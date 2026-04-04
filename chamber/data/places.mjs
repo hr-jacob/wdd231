@@ -38,7 +38,7 @@ export const places = [
   {
     name: "Mercado Lucas de Gálvez",
     address: "Centro Histórico",
-    image: "images/discover/mercado.webp",
+    image: "images/mercado.webp",
     description: "Traditional market filled with local culture."
   },
   {
