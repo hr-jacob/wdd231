@@ -20,7 +20,7 @@ export const places = [
   {
     name: "Gran Museo del Mundo Maya",
     address: "Calle 60 Norte",
-    image: "images/discover/maya.webp",
+    image: "images/maya.webp",
     description: "Modern museum dedicated to Mayan civilization."
   },
   {
