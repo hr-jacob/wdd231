@@ -26,7 +26,7 @@ export const places = [
   {
     name: "Zoológico del Centenario",
     address: "Av. Itzáes",
-    image: "images/discover/zoo.webp",
+    image: "images/zoo.webp",
     description: "Family park with animals and recreation areas."
   },
   {
