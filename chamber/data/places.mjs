@@ -2,7 +2,7 @@ export const places = [
   {
     name: "Parque de las Américas",
     address: "Calle 21, García Ginerés",
-    image: "images/discover/americas.webp",
+    image: "images/americas.webp",
     description: "Historic park featuring cultural events and Art Deco architecture."
   },
   {
