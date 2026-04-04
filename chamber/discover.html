@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Discover Mérida | Chamber of Commerce</title>
+
+<meta name="description" content="Discover places of interest in Mérida, Yucatán including cultural landmarks, parks, museums, and local attractions.">
+
+<meta name="author" content="Jacob Herrera">
+
+<!-- Favicon -->
+<link rel="icon" href="images/mcc_logo.ico" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!-- CSS (same as index) -->
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<!-- NEW DISCOVER SCRIPT (MODULE REQUIRED) -->
+<script type="module" src="scripts/discover.js" defer></script>
+
+<!-- Existing scripts -->
+<script src="scripts/date.js" defer></script>
+<script src="scripts/navigation.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="header-container">
+
+        <div class="branding">
+            <img src="images/mcc-logo-header.png"
+                 alt="Mérida Chamber of Commerce Logo"
+                 class="logo">
+
+            <div>
+                <h1>Mérida Chamber of Commerce</h1>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Menu">☰</button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <picture>
+        <img src="images/hero-merida.webp"
+             alt="Discover Mérida attractions">
+    </picture>
+
+    <div class="hero-text">
+        <h2>Discover Mérida</h2>
+        <p>Explore local attractions, culture, and community highlights.</p>
+    </div>
+</section>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+    <!-- Visitor Message -->
+    <div id="visit-message" class="visit-message"></div>
+
+    <!-- DISCOVER GRID -->
+    <section id="discover-grid" class="discover-grid">
+        <!-- Cards inserted with JS -->
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+<p>
+© <span id="year"></span> Mérida Chamber of Commerce |
+Jacob Herrera | WDD131
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
