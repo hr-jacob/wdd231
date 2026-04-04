@@ -8,7 +8,7 @@ export const places = [
   {
     name: "Paseo de Montejo",
     address: "Centro, Mérida",
-    image: "images/discover/paseo.webp",
+    image: "images//paseo.webp",
     description: "Iconic avenue with historic mansions and restaurants."
   },
   {
