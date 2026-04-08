@@ -70,9 +70,7 @@ nav {
 .navigation {
     display: none;
     flex-direction: column;
-    position: absolute;
-    right: 1rem;
-    top: 70px;
+
     background-color: var(--terracotta);
     padding: 1rem;
     border-radius: 6px;
