@@ -1,0 +1,188 @@
+/* ===============================
+   ROOT COLORS & FONTS
+================================= */
+
+:root {
+  --beige: #F5E6D3;
+  --terracotta: #C96A3D;
+  --dark: #333;
+  --white: #ffffff;
+
+  --heading-font: "Playfair Display", serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
+/* ===============================
+   GENERAL
+================================= */
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--beige);
+  color: var(--dark);
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  color: var(--terracotta);
+  margin-bottom: .5rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* ===============================
+   HEADER
+================================= */
+
+header {
+  background: var(--white);
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Navigation */
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navigation a {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.navigation a.active {
+  color: var(--terracotta);
+}
+
+/* show menu */
+.navigation.open {
+  display: flex;
+}
+
+/* ===============================
+   HERO
+================================= */
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0,0,0,.5);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* ===============================
+   CARDS
+================================= */
+
+.card {
+  background: var(--white);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,.1);
+}
+
+/* Activities preview frame */
+
+.image-frame {
+  border: 6px solid var(--terracotta);
+  padding: .5rem;
+  margin: 1rem 0;
+}
+
+/* Button */
+
+.cta-button {
+  display: inline-block;
+  background: var(--terracotta);
+  color: white;
+  padding: .6rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  opacity: .85;
+}
+
+/* ===============================
+   ACTIVITIES PAGE
+================================= */
+
+.activity-section {
+  margin-bottom: 2rem;
+}
+
+.activity-section img {
+  border-radius: 10px;
+  margin: .8rem 0;
+}
+
+/* ===============================
+   FORM
+================================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+input, select {
+  padding: .6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background: var(--terracotta);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--white);
+  margin-top: 2rem;
+  font-size: .9rem;
+}
