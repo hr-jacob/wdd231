@@ -1,53 +1,47 @@
 /* ===============================
-   DESKTOP VIEW
+   DESKTOP STYLES
 ================================= */
 
 @media (min-width: 768px) {
 
 /* Navigation always visible */
 #menu {
-  display: none;
+    display: none;
 }
 
 .navigation {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
 }
 
-/* HOME GRID */
-
+/* Home grid layout */
 .home-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-/* Hero text bigger */
-
-.hero-text {
-  font-size: 1.2rem;
-  max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 /* Activities layout */
-
-.activities {
-  max-width: 1000px;
-  margin: auto;
-}
-
 .activity-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
-/* Form center */
-
+/* Form centered */
 .form-page {
-  max-width: 600px;
-  margin: auto;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Wireframe desktop view */
+.desktop p {
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
 }
 
 }

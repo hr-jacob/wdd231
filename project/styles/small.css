@@ -1,188 +1,189 @@
 /* ===============================
-   ROOT COLORS & FONTS
+   GOOGLE FONTS (SITE PLAN)
 ================================= */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
 
+/* ===============================
+   COLOR VARIABLES (SITE PLAN)
+================================= */
 :root {
-  --beige: #F5E6D3;
-  --terracotta: #C96A3D;
-  --dark: #333;
-  --white: #ffffff;
-
-  --heading-font: "Playfair Display", serif;
-  --body-font: "Open Sans", sans-serif;
+    --beige: #F5E6D3;
+    --terracotta: #C96A3D;
+    --dark: #3A2E2A;
 }
 
 /* ===============================
    GENERAL
 ================================= */
-
 body {
-  font-family: var(--body-font);
-  background-color: var(--beige);
-  color: var(--dark);
-}
-
-h1, h2, h3 {
-  font-family: var(--heading-font);
-  color: var(--terracotta);
-  margin-bottom: .5rem;
-}
-
-main {
-  padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--beige);
+    color: var(--dark);
+    line-height: 1.6;
 }
 
 /* ===============================
-   HEADER
+   HEADER & FOOTER
 ================================= */
-
-header {
-  background: var(--white);
-  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+header,
+footer {
+    background-color: var(--terracotta);
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+header h1 {
+    margin-bottom: .5rem;
 }
 
+/* ===============================
+   NAVIGATION
+================================= */
 #menu {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
 }
-
-/* Navigation */
 
 .navigation {
-  display: none;
-  flex-direction: column;
-  gap: 1rem;
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: .5rem;
 }
 
 .navigation a {
-  color: var(--dark);
-  font-weight: 600;
+    color: white;
+    font-weight: bold;
 }
 
 .navigation a.active {
-  color: var(--terracotta);
+    text-decoration: underline;
 }
 
-/* show menu */
 .navigation.open {
-  display: flex;
+    display: flex;
 }
 
 /* ===============================
-   HERO
+   TYPOGRAPHY
 ================================= */
-
-.hero {
-  position: relative;
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
 }
 
+/* ===============================
+   MAIN CONTENT
+================================= */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* ===============================
+   HERO IMAGE
+================================= */
 .hero img {
-  width: 100%;
-  height: auto;
-}
-
-.hero-text {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: rgba(0,0,0,.5);
-  color: white;
-  padding: 1rem;
-  border-radius: 8px;
+    width: 100%;
 }
 
 /* ===============================
-   CARDS
+   CARDS (HOME PAGE)
 ================================= */
-
 .card {
-  background: var(--white);
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,.1);
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
 }
 
-/* Activities preview frame */
-
+/* ===============================
+   ACTIVITIES IMAGE FRAME
+================================= */
 .image-frame {
-  border: 6px solid var(--terracotta);
-  padding: .5rem;
-  margin: 1rem 0;
+    border: 4px solid var(--terracotta);
+    padding: 10px;
+    margin-top: 10px;
 }
 
-/* Button */
-
+/* ===============================
+   BUTTONS
+================================= */
 .cta-button {
-  display: inline-block;
-  background: var(--terracotta);
-  color: white;
-  padding: .6rem 1rem;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-.cta-button:hover {
-  opacity: .85;
+    display: inline-block;
+    background-color: var(--terracotta);
+    color: white;
+    padding: 10px 16px;
+    margin-top: 10px;
 }
 
 /* ===============================
    ACTIVITIES PAGE
 ================================= */
-
-.activity-section {
-  margin-bottom: 2rem;
-}
-
 .activity-section img {
-  border-radius: 10px;
-  margin: .8rem 0;
+    margin: 10px 0;
 }
 
 /* ===============================
    FORM
 ================================= */
-
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
+    background: white;
+    padding: 20px;
 }
 
-input, select {
-  padding: .6rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+label {
+    display: block;
+    margin-bottom: 10px;
 }
 
-input[type="submit"] {
-  background: var(--terracotta);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
 }
 
 /* ===============================
-   FOOTER
+   SITE PLAN COLORS (KEEP ORIGINAL)
 ================================= */
+.color {
+    padding: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: var(--white);
-  margin-top: 2rem;
-  font-size: .9rem;
+.beige {
+    background-color: #F5E6D3;
+    border: 2px solid #ccc;
+}
+
+.terracotta {
+    background-color: #C96A3D;
+    color: white;
+}
+
+/* ===============================
+   WIREFRAMES (UNCHANGED)
+================================= */
+.wireframe {
+    border: 2px dashed var(--dark);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.wireframe p {
+    border: 1px solid var(--dark);
+    padding: 10px;
+    margin: 8px 0;
+    text-align: center;
 }

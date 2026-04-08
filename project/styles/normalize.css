@@ -1,0 +1,31 @@
+/* normalize.css */
+
+/* Box model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default spacing */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Images responsive */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
