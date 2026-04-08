@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
 
 /* ===============================
-   COLOR VARIABLES (SITE PLAN)
+   COLOR VARIABLES
 ================================= */
 :root {
     --beige: #F5E6D3;
@@ -16,6 +16,7 @@
    GENERAL
 ================================= */
 body {
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--beige);
     color: var(--dark);
@@ -29,30 +30,57 @@ header,
 footer {
     background-color: var(--terracotta);
     color: white;
-    text-align: center;
     padding: 1rem;
 }
 
+/* ⭐ HEADER LINEAR FIX */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Title */
 header h1 {
-    margin-bottom: .5rem;
+    margin: 0;
+    font-size: 1.4rem;
 }
 
 /* ===============================
    NAVIGATION
 ================================= */
+
+/* Hamburger button */
 #menu {
     background: none;
     border: none;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: white;
     cursor: pointer;
 }
 
+/* Nav container */
+nav {
+    margin-left: auto;
+}
+
+/* Mobile menu hidden */
 .navigation {
     display: none;
     flex-direction: column;
-    gap: .5rem;
-    margin-top: .5rem;
+    position: absolute;
+    right: 1rem;
+    top: 70px;
+    background-color: var(--terracotta);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+/* Show menu when JS adds class */
+.navigation.open {
+    display: flex;
 }
 
 .navigation a {
@@ -62,10 +90,6 @@ header h1 {
 
 .navigation a.active {
     text-decoration: underline;
-}
-
-.navigation.open {
-    display: flex;
 }
 
 /* ===============================
@@ -84,7 +108,6 @@ main {
     padding: 20px;
 }
 
-/* Sections */
 section {
     margin-bottom: 40px;
 }
@@ -94,10 +117,11 @@ section {
 ================================= */
 .hero img {
     width: 100%;
+    display: block;
 }
 
 /* ===============================
-   CARDS (HOME PAGE)
+   CARDS
 ================================= */
 .card {
     background: white;
@@ -107,7 +131,7 @@ section {
 }
 
 /* ===============================
-   ACTIVITIES IMAGE FRAME
+   IMAGE FRAME
 ================================= */
 .image-frame {
     border: 4px solid var(--terracotta);
@@ -139,6 +163,7 @@ section {
 form {
     background: white;
     padding: 20px;
+    border-radius: 6px;
 }
 
 label {
@@ -154,7 +179,7 @@ select {
 }
 
 /* ===============================
-   SITE PLAN COLORS (KEEP ORIGINAL)
+   SITE PLAN COLORS
 ================================= */
 .color {
     padding: 20px;
@@ -173,7 +198,7 @@ select {
 }
 
 /* ===============================
-   WIREFRAMES (UNCHANGED)
+   WIREFRAMES
 ================================= */
 .wireframe {
     border: 2px dashed var(--dark);
@@ -185,5 +210,12 @@ select {
     border: 1px solid var(--dark);
     padding: 10px;
     margin: 8px 0;
+    text-align: center;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+footer {
     text-align: center;
 }
