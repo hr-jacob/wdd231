@@ -1,0 +1,53 @@
+/* ===============================
+   DESKTOP VIEW
+================================= */
+
+@media (min-width: 768px) {
+
+/* Navigation always visible */
+#menu {
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+/* HOME GRID */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Hero text bigger */
+
+.hero-text {
+  font-size: 1.2rem;
+  max-width: 400px;
+}
+
+/* Activities layout */
+
+.activities {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.activity-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Form center */
+
+.form-page {
+  max-width: 600px;
+  margin: auto;
+}
+
+}
