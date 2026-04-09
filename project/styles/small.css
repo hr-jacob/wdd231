@@ -137,9 +137,9 @@ section {
 .weather {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* keeps it responsive */
-    gap: .2rem;
+    justify-content: center;  /* 👈 key change */
+    flex-wrap: wrap;
+    gap: 1rem; /* increase slightly for better spacing */
 }
 
 .weather p,
