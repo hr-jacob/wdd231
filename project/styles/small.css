@@ -131,7 +131,7 @@ section {
 .weather {
     width: 100vw;              /* full screen width */
     max-width: 100vw;
-    margin-left: calc(-50vw + 40%); /* break out of centered layout */
+    margin-left: calc(-50vw + 50%); /* break out of centered layout */
 }
 
 .weather {
