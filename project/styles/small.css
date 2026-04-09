@@ -129,9 +129,9 @@ section {
 }
 
 .weather {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 100vw;              /* full screen width */
+    max-width: 100vw;
+    margin-left: calc(-50vw + 50%); /* break out of centered layout */
 }
 
 .weather {
