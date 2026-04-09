@@ -139,7 +139,7 @@ section {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap; /* keeps it responsive */
-    gap: 1rem;
+    gap: 5rem;
 }
 
 .weather p,
