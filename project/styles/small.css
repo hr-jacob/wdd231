@@ -133,6 +133,14 @@ section {
     max-width: 100%;
 }
 
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* keeps it responsive */
+    gap: 1rem;
+}
+
 /* ===============================
    IMAGE FRAME
 ================================= */
