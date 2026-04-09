@@ -141,6 +141,16 @@ section {
     gap: 1rem;
 }
 
+.weather p,
+.weather h3 {
+    margin: 0;
+}
+
+/* group temperature + description */
+.weather p {
+    display: inline-block;
+}
+
 /* ===============================
    IMAGE FRAME
 ================================= */
