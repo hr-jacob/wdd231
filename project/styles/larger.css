@@ -18,9 +18,8 @@
 
 /* Home grid layout */
 .home-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Activities layout */
