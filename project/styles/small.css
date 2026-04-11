@@ -110,6 +110,10 @@ section {
     margin-bottom: 40px;
 }
 
+.about-section p {
+    margin-bottom: 1rem;
+}
+
 /* ===============================
    HERO IMAGE
 ================================= */
