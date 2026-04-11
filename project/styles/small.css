@@ -181,57 +181,7 @@ p {
    ACTIVITIES PAGE
 ================================= */
 
-/* ===============================
-   ACTIVITIES PAGE
-================================= */
 
-.activities {
-    max-width: 1000px;
-    margin: auto;
-    padding: 2rem;
-}
-
-.activity-section {
-    margin-bottom: 4rem;
-}
-
-.activity-section h2 {
-    margin-bottom: 1rem;
-    color: var(--terracotta);
-}
-
-/* ONLY text and image side by side */
-.activity-content {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-/* paragraph takes more space */
-.activity-content p {
-    flex: 2;
-    line-height: 1.8;
-    margin: 0;
-}
-
-/* image smaller */
-.activity-content img {
-    flex: 1;
-    max-width: 300px;
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .activity-content {
-        flex-direction: column;
-    }
-
-    .activity-content img {
-        max-width: 100%;
-    }
-}
 
 /* ===============================
    MOBILE RESPONSIVE
