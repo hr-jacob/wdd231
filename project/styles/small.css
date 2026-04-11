@@ -198,7 +198,7 @@ p {
 
 .activity-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* 👈 CLAVE: alinea arriba */
     gap: 20px;
 }
 
@@ -206,14 +206,15 @@ p {
     flex: 1;
     font-size: 16px;
     line-height: 1.6;
+    margin: 0; /* evita espacios raros */
 }
 
 .activity-content img {
-    width: 250px;
+    width: 300px; /* un poco más grande como en tu ejemplo */
     height: auto;
-    border-radius: 10px;
+    border-radius: 12px;
+    object-fit: cover;
 }
-
 /* ===============================
    MOBILE RESPONSIVE
 ================================= */
