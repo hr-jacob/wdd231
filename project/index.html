@@ -11,11 +11,20 @@
 
 <meta name="author" content="Jacob Herrera">
 
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Explore Parque de las Américas in Mérida">
+<meta property="og:description" content="Discover the beauty, history, and cultural experiences of Parque de las Américas, one of Mérida’s most beloved public landmarks.">
+<meta property="og:image" content="https://yourusername.github.io/yourrepository/images/banner.webp">
+<meta property="og:url" content="https://yourusername.github.io/yourrepository/">
+<meta property="og:type" content="website">
+
 <!-- Favicon -->
-<link rel="icon" href="images/fuente.png">
+<link rel="icon" type="image/png" href="images/fuente.png">
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
 <!-- CSS -->
@@ -34,99 +43,106 @@
 
 <!-- HEADER -->
 <header>
-<div class="header-container">
+    <div class="header-container">
 
-<div class="branding">
-<h1>Parque de las Américas</h1>
-</div>
+        <div class="branding">
+            <h1>Parque de las Américas</h1>
+        </div>
 
-<button id="menu">☰</button>
+        <button id="menu">☰</button>
 
-<nav>
-<ul class="navigation">
-<li><a href="index.html" class="active">Home</a></li>
-<li><a href="activities.html">Activities</a></li>
-<li><a href="subscribe.html">Subscribe</a></li>
-</ul>
-</nav>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
 
-</div>
+    </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-<img src="images/banner.webp" alt="Parque de las Américas Mérida">
-<!-- WEATHER -->
+
+    <img src="images/banner.webp" alt="Parque de las Américas Mérida">
+
+    <!-- WEATHER -->
     <section class="card weather">
         <h2>Weather</h2>
 
-            <p>
-                <strong>Temperature:</strong>
-                <span id="current-temp"></span>
-            </p>
+        <p>
+            <strong>Temperature:</strong>
+            <span id="current-temp"></span>
+        </p>
 
-            <p id="weather-desc"></p>
+        <p id="weather-desc"></p>
 
         <h3>3-Day Forecast</h3>
+
         <div id="forecast"></div>
     </section>
+
 </section>
 
 <!-- MAIN -->
 <main class="home-grid">
 
-<!-- DESCRIPTION -->
-<section class="card">
-<h2>About the Park</h2>
+    <!-- DESCRIPTION -->
+    <section class="card">
 
-<p>
-Parque de las Américas is one of the most iconic public spaces in Mérida—a place where architecture, history, 
-and everyday life blend into a uniquely meaningful urban landmark. Located in the García Ginerés neighborhood, 
-the park stands out not only for its size and beauty, but also for the cultural symbolism embedded in its design.
+        <h2>About the Park</h2>
 
-The park was built between 1942 and 1945 during the administration of Governor Ernesto Novelo Torres, 
-on land that had previously been used for other unfinished projects, including a monument dedicated to Felipe Carrillo Puerto. 
-Its design was entrusted to the architects Manuel Amábilis Domínguez and Max Amábilis Rhodon, 
-who conceived the space as a tribute to the unity of the American continent. 
-This vision is reflected in the park’s layout, where each country of the Americas is represented through carved stone stelae featuring names, maps, and national symbols.
+        <p>
+            Parque de las Américas is one of the most iconic public spaces in Mérida—a place where architecture, history, 
+            and everyday life blend into a uniquely meaningful urban landmark. Located in the García Ginerés neighborhood, 
+            the park stands out not only for its size and beauty, but also for the cultural symbolism embedded in its design.
+        </p>
 
-Architecturally, the park is especially significant for its neomaya style, a regional interpretation of modern architecture that incorporates elements inspired by ancient Mayan design. 
-Structures such as the concha acústica (open-air theater), the central fountain, and the José Martí Cultural Center all echo forms found in sites like Chichén Itzá, 
-while blending them with Art Deco influences. This fusion makes the park a rare and cohesive example of 20th-century nationalist architecture in Mexico.
+        <p>
+            The park was built between 1942 and 1945 during the administration of Governor Ernesto Novelo Torres, 
+            on land that had previously been used for other unfinished projects, including a monument dedicated to Felipe Carrillo Puerto. 
+            Its design was entrusted to the architects Manuel Amábilis Domínguez and Max Amábilis Rhodon.
+        </p>
 
-Beyond its design, the importance of Parque de las Américas lies in its role as a social and cultural hub. Since its inauguration, 
-it has served as a gathering place for families, artists, and the community at large, hosting cultural events, performances, 
-and everyday recreation. Over time, it has evolved from a simple public space into a symbol of identity and collective memory for the city, 
-often described as a “living heritage” that reflects Mérida’s history and values. 
-</p>
+        <p>
+            Architecturally, the park is especially significant for its neomaya style, a regional interpretation of modern architecture 
+            that incorporates elements inspired by ancient Mayan design.
+        </p>
 
-</section>
+        <p>
+            Beyond its design, the importance of Parque de las Américas lies in its role as a social and cultural hub. Since its inauguration, 
+            it has served as a gathering place for families, artists, and the community at large.
+        </p>
 
-<!-- ACTIVITIES PREVIEW -->
-<section class="card activities-preview">
-<h2>Our Activities</h2>
+    </section>
 
-<div class="image-frame">
-<img src="images/activities.webp" alt="Activities at the park">
-</div>
+    <!-- ACTIVITIES PREVIEW -->
+    <section class="card activities-preview">
 
-<a href="activities.html" class="cta-button">
-Explore Activities
-</a>
+        <h2>Our Activities</h2>
 
-</section>
+        <div class="image-frame">
+            <img src="images/activities.webp" alt="Activities at the park">
+        </div>
+
+        <a href="activities.html" class="cta-button">
+            Explore Activities
+        </a>
+
+    </section>
 
 </main>
 
 <!-- FOOTER -->
 <footer>
 
-<p>
-© <span id="year"></span> Parque de las Américas |
-Jacob Herrera | WDD131
-</p>
+    <p>
+        © <span id="year"></span> Parque de las Américas |
+        Jacob Herrera | WDD131
+    </p>
 
-<p id="lastModified"></p>
+    <p id="lastModified"></p>
 
 </footer>
 
