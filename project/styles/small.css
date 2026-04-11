@@ -181,21 +181,6 @@ p {
    ACTIVITIES PAGE
 ================================= */
 
-.activities {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.activity-section {
-    margin-bottom: 40px;
-}
-
-.activity-section h2 {
-    margin-bottom: 15px;
-    font-size: 24px;
-}
-
 .activity-content {
     display: flex;
     align-items: flex-start; /* 👈 CLAVE: alinea arriba */
