@@ -200,36 +200,37 @@ p {
     color: var(--terracotta);
 }
 
-/* Text + image row */
-.activity-row {
+/* ONLY text and image side by side */
+.activity-content {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-/* Text side */
-.activity-text {
+/* paragraph takes more space */
+.activity-content p {
     flex: 2;
-}
-
-/* Image side */
-.activity-image {
-    flex: 1;
-}
-
-/* Image styling */
-.activity-image img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-}
-
-/* Paragraph spacing */
-.activity-text p {
-    margin: 0;
     line-height: 1.8;
+    margin: 0;
+}
+
+/* image smaller */
+.activity-content img {
+    flex: 1;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .activity-content {
+        flex-direction: column;
+    }
+
+    .activity-content img {
+        max-width: 100%;
+    }
 }
 
 /* ===============================
