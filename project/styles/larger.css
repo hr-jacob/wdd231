@@ -44,3 +44,67 @@
 }
 
 }
+/* ===== FORCE ACTIVITIES LAYOUT FIX ===== */
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* CARD LAYOUT */
+.activity-card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* TEXT */
+.activity-text {
+    flex: 1;
+}
+
+.activity-text h2 {
+    margin: 0 0 10px 0;
+}
+
+.activity-text p {
+    margin: 0;
+}
+
+/* IMAGE (THIS WAS YOUR MAIN ISSUE) */
+.activity-card img {
+    width: 300px !important;
+    height: 180px !important;
+    object-fit: cover;
+    border-radius: 10px;
+
+    flex-shrink: 0;
+}
+
+/* ===== FIX GLOBAL IMG RULES ===== */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .activity-card {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .activity-card img {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
