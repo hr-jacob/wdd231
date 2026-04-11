@@ -184,6 +184,26 @@ p {
     margin: 10px 0;
 }
 
+.activity-section {
+    margin-bottom: 3rem;
+}
+
+.activity-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.activity-content img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.activity-content p {
+    flex: 1;
+    margin: 0;
+}
+
 /* ===============================
    FORM
 ================================= */
