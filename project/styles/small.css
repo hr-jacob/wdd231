@@ -181,28 +181,72 @@ p {
    ACTIVITIES PAGE
 ================================= */
 
-/* Activities spacing */
-.activity-section {
-    margin-bottom: 3rem;
+/* ===============================
+   ACTIVITIES PAGE
+================================= */
+
+.activities {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
 }
 
-/* Image + text side by side */
+.activity-section {
+    margin-bottom: 4rem;
+}
+
+.activity-section h2 {
+    margin-bottom: 1rem;
+    color: var(--terracotta);
+}
+
+/* Text + image row */
 .activity-row {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-/* Images */
-.activity-row img {
-    width: 300px;
-    border-radius: 10px;
+/* Text side */
+.activity-text {
+    flex: 2;
 }
 
-/* Paragraph */
-.activity-row p {
+/* Image side */
+.activity-image {
     flex: 1;
+}
+
+/* Image styling */
+.activity-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Paragraph spacing */
+.activity-text p {
     margin: 0;
+    line-height: 1.8;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+    .activity-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .activity-image img {
+        max-width: 100%;
+    }
+
 }
 
 /* ===============================
