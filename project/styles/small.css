@@ -183,19 +183,21 @@ p {
 
 .activity-content {
     display: flex;
-    align-items: flex-start; /* 👈 CLAVE: alinea arriba */
-    gap: 20px;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .activity-content p {
-    flex: 1;
+    flex: 2; /* 👈 el texto ocupa más espacio */
     font-size: 16px;
     line-height: 1.6;
-    margin: 0; /* evita espacios raros */
+    margin: 0;
 }
 
 .activity-content img {
-    width: 300px; /* un poco más grande como en tu ejemplo */
+    flex: 1; /* 👈 imagen ocupa menos espacio */
+    max-width: 350px;
+    width: 100%;
     height: auto;
     border-radius: 12px;
     object-fit: cover;
